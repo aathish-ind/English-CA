@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Aathish — Portfolio</title>
-
+    
+    <!-- Minimal SVG Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='white'>A</text></svg>">
 
     <meta name="description"
@@ -188,7 +189,7 @@
             transform: translateY(-3px);
             border-color: white;
         }
-
+        
         .btn-primary:hover {
             background: #e5e5e5;
         }
@@ -229,13 +230,8 @@
         }
 
         @keyframes float {
-            0%,100% {
-                transform: translateY(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-18px) rotate(5deg);
-            }
+            0%,100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-18px) rotate(5deg); }
         }
 
         /* ================= SECTIONS ================= */
@@ -304,13 +300,12 @@
             gap: 8px;
             background: #0d0d0d;
         }
-
+        
         .tag span {
             color: white;
         }
 
-        /* ================= PHOTO ================= */
-
+        /* Photo Area */
         .image-wrapper {
             position: relative;
             width: 100%;
@@ -338,9 +333,8 @@
             min-height: 400px;
             object-fit: cover;
             border-radius: 12px;
-            background: #111;
+            background: #111; 
             border: 1px solid #222;
-            display: block;
         }
 
         /* ================= SKILLS ================= */
@@ -374,7 +368,7 @@
         .skill-item {
             margin-bottom: 18px;
         }
-
+        
         .skill-item:last-child {
             margin-bottom: 0;
         }
@@ -402,7 +396,7 @@
         }
 
         /* ================= ACHIEVEMENTS ================= */
-
+        
         .achievements {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -417,7 +411,7 @@
             text-align: center;
             transition: 0.3s;
         }
-
+        
         .achievement-card:hover {
             transform: translateY(-5px);
             border-color: #555;
@@ -616,6 +610,7 @@
                 margin-top: 20px;
             }
 
+            /* Mobile Menu Setup */
             .menu-toggle {
                 display: flex;
             }
@@ -638,7 +633,7 @@
             .nav-links.active {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
-
+            
             .nav-links a {
                 font-size: 16px;
                 padding: 10px 0;
@@ -664,7 +659,7 @@
             .hero-description {
                 font-size: 16px;
             }
-
+            
             .achievements {
                 grid-template-columns: 1fr;
             }
@@ -688,7 +683,7 @@
         <a href="#home" class="logo" aria-label="Back to home">
             AATHISH<span>.</span>
         </a>
-
+        
         <div class="menu-toggle" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
@@ -725,7 +720,7 @@
             </h1>
 
             <p class="hero-description">
-                B.Tech CSE student passionate about building secure systems,
+                B.Tech CSE student passionate about building secure systems, 
                 exploring artificial intelligence, and crafting scalable software architectures.
             </p>
 
@@ -771,36 +766,26 @@
             <div class="about-text">
 
                 <p>
-                    I am a B.Tech CSE student at Lovely Professional University,
-                    deeply passionate about
-                    <strong>cybersecurity</strong>,
-                    <strong>full-stack development</strong>, and
+                    I am a B.Tech CSE student at Lovely Professional University, deeply passionate about 
+                    <strong>cybersecurity</strong>, <strong>full-stack development</strong>, and 
                     <strong>artificial intelligence</strong>.
                 </p>
 
                 <p>
-                    My technical journey includes hands-on experience in
-                    <strong>LLM training</strong>,
-                    <strong>enterprise vulnerability assessment</strong>,
-                    and architecting robust system monitoring tools.
+                    My technical journey includes hands-on experience in <strong>LLM training</strong>, 
+                    <strong>enterprise vulnerability assessment</strong>, and architecting robust system 
+                    monitoring tools.
                 </p>
 
                 <p>
-                    Driven by a strong problem-solving mindset, I am a consistent learner
-                    having conquered 200+ LeetCode problems, continually expanding my
-                    boundaries in secure software engineering and bleeding-edge technologies.
+                    Driven by a strong problem-solving mindset, I am a consistent learner having conquered 
+                    200+ LeetCode problems, continually expanding my boundaries in secure software 
+                    engineering and bleeding-edge technologies.
                 </p>
-
+                
                 <div class="about-tags">
-                    <div class="tag">
-                        <span>&lt;/&gt;</span>
-                        200+ LeetCode
-                    </div>
-
-                    <div class="tag">
-                        <span>🔥</span>
-                        110+ Days DSA
-                    </div>
+                    <div class="tag"><span>&lt;/&gt;</span> 200+ LeetCode</div>
+                    <div class="tag"><span>🔥</span> 110+ Days DSA</div>
                 </div>
 
                 <a href="#" class="btn" style="margin-top: 10px;">
@@ -809,16 +794,11 @@
 
             </div>
 
-
             <div class="about-image">
-
                 <div class="image-wrapper">
-
-                    <!-- IMPORTANT: photo.jpeg matches GitHub file name -->
-                    <img src="photo.jpeg" alt="Profile Photo">
-
+                    <!-- Photo placed here -->
+                    <img src="./photo.jpeg" alt="Aathish Profile Photo">
                 </div>
-
             </div>
 
         </div>
@@ -844,237 +824,113 @@
 
         <div class="skills-grid">
 
-
             <div class="skill-card">
-
                 <h3>&lt;/&gt; Programming</h3>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>C/C++</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
+                    <div class="skill-info"><span>C/C++</span><span>90%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 90%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Python</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Python</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>JavaScript</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
+                    <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 80%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Java</span>
-                        <span>75%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 75%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Java</span><span>75%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 75%;"></div></div>
                 </div>
-
             </div>
 
-
             <div class="skill-card">
-
                 <h3>📚 Frameworks</h3>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>React</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>React</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Node.js</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Node.js</span><span>80%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 80%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span style="color:white;">HTML/CSS</span>
-                        <span style="color:white;">95%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
+                    <div class="skill-info"><span style="color:white;">HTML/CSS</span><span style="color:white;">95%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 95%;"></div></div>
                 </div>
-
             </div>
 
-
             <div class="skill-card">
-
                 <h3>🛡️ Cyber Tools</h3>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Nmap & Wireshark</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Nmap & Wireshark</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Burp Suite</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Burp Suite</span><span>80%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 80%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Metasploit</span>
-                        <span>75%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 75%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Metasploit</span><span>75%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 75%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Hydra & Shodan</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Hydra & Shodan</span><span>80%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 80%;"></div></div>
                 </div>
-
             </div>
 
-
             <div class="skill-card">
-
                 <h3>>_ Platforms</h3>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span style="color:white;">
-                            Linux (Kali, Ubuntu, Garuda)
-                        </span>
-                        <span style="color:white;">90%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
+                    <div class="skill-info"><span style="color:white;">Linux (Kali, Ubuntu, Garuda)</span><span style="color:white;">90%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 90%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Windows</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Windows</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Git / GitHub</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
-
             </div>
 
-
             <div class="skill-card">
-
                 <h3>👥 Soft Skills</h3>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Communication</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Communication</span><span>95%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 95%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Problem-solving</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Problem-solving</span><span>90%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 90%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Teamwork</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Teamwork</span><span>90%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 90%;"></div></div>
                 </div>
-
+                
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Adaptability</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
+                    <div class="skill-info"><span>Adaptability</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" style="width: 85%;"></div></div>
                 </div>
 
             </div>
@@ -1104,42 +960,30 @@
 
             <div class="achievement-card">
                 <div class="achievement-number">
-                    <span class="achievement-icon">🔥</span>
-                    110+
+                    <span class="achievement-icon">🔥</span>110+
                 </div>
-                <div class="achievement-text">
-                    Days DSA Streak
-                </div>
+                <div class="achievement-text">Days DSA Streak</div>
             </div>
 
             <div class="achievement-card">
                 <div class="achievement-number">
-                    <span class="achievement-icon">&lt;/&gt;</span>
-                    200+
+                    <span class="achievement-icon">&lt;/&gt;</span>200+
                 </div>
-                <div class="achievement-text">
-                    LeetCode Problems
-                </div>
+                <div class="achievement-text">LeetCode Problems</div>
             </div>
 
             <div class="achievement-card">
                 <div class="achievement-number">
-                    <span class="achievement-icon">H</span>
-                    50+
+                    <span class="achievement-icon">H</span>50+
                 </div>
-                <div class="achievement-text">
-                    HackerRank Solutions
-                </div>
+                <div class="achievement-text">HackerRank Solutions</div>
             </div>
 
             <div class="achievement-card">
                 <div class="achievement-number">
-                    <span class="achievement-icon">🚩</span>
-                    2nd
+                    <span class="achievement-icon">🚩</span>2nd
                 </div>
-                <div class="achievement-text">
-                    Runner-Up CTF
-                </div>
+                <div class="achievement-text">Runner-Up CTF</div>
             </div>
 
         </div>
@@ -1167,105 +1011,77 @@
 
 
             <div class="project-card">
-
                 <div class="project-number">
                     PROJECT / 01
                 </div>
-
-                <h3>
-                    Privacy Vision Agent
-                </h3>
-
+                <h3>Privacy Vision Agent</h3>
                 <p>
                     An intelligent computer vision system designed
                     around privacy-aware visual processing and
                     AI-assisted analysis.
                 </p>
-
                 <div class="project-tech">
                     <span>Python</span>
                     <span>Computer Vision</span>
                     <span>AI</span>
                     <span>Agents</span>
                 </div>
-
             </div>
 
 
             <div class="project-card">
-
                 <div class="project-number">
                     PROJECT / 02
                 </div>
-
-                <h3>
-                    ML Prediction API
-                </h3>
-
+                <h3>ML Prediction API</h3>
                 <p>
                     A machine learning inference system designed
                     to expose trained models through a scalable
                     API architecture.
                 </p>
-
                 <div class="project-tech">
                     <span>Python</span>
                     <span>Scikit-learn</span>
                     <span>FastAPI</span>
                     <span>REST API</span>
                 </div>
-
             </div>
 
 
             <div class="project-card">
-
                 <div class="project-number">
                     PROJECT / 03
                 </div>
-
-                <h3>
-                    Image Classifier
-                </h3>
-
+                <h3>Image Classifier</h3>
                 <p>
                     A deep learning computer vision project focused
                     on image classification using neural networks.
                 </p>
-
                 <div class="project-tech">
                     <span>Python</span>
                     <span>PyTorch</span>
                     <span>CNN</span>
                     <span>Computer Vision</span>
                 </div>
-
             </div>
 
 
             <div class="project-card">
-
                 <div class="project-number">
                     PROJECT / 04
                 </div>
-
-                <h3>
-                    Semantic Search & RAG
-                </h3>
-
+                <h3>Semantic Search & RAG</h3>
                 <p>
                     An intelligent retrieval system combining
                     embeddings, semantic search and LLM-based
                     generation.
                 </p>
-
                 <div class="project-tech">
                     <span>Python</span>
                     <span>LLM</span>
                     <span>RAG</span>
                     <span>Embeddings</span>
                 </div>
-
             </div>
 
         </div>
@@ -1304,17 +1120,14 @@
         <div class="contact-box">
 
             <div class="contact-text">
-
                 <h2>
                     Let's build<br>
                     something.
                 </h2>
-
                 <p>
                     Have an idea, project or opportunity?
                     Feel free to reach out.
                 </p>
-
             </div>
 
 
@@ -1353,7 +1166,6 @@
                     <span>↗</span>
                 </a>
 
-
                 <a
                     class="contact-link"
                     href="https://www.youtube.com/@Aathish7"
@@ -1379,15 +1191,8 @@
 <footer>
 
     <div class="footer-container">
-
-        <span>
-            © 2026 Aathish
-        </span>
-
-        <span>
-            Student & Engineer
-        </span>
-
+        <span>© 2026 Aathish</span>
+        <span>Student & Engineer</span>
     </div>
 
 </footer>
@@ -1398,7 +1203,6 @@
 <script>
 
     // Mobile Menu Toggle Logic
-
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
@@ -1407,59 +1211,36 @@
         navLinks.classList.toggle('active');
     });
 
-
     // Close menu when clicking a link
-
     navItems.forEach(item => {
-
         item.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
-
     });
 
-
     // Reveal Animation
-
     const observer = new IntersectionObserver(
-
         (entries) => {
-
             entries.forEach(entry => {
-
                 if (entry.isIntersecting) {
-
                     entry.target.style.opacity = "1";
                     entry.target.style.transform = "translateY(0)";
-
                 }
-
             });
-
         },
-
-        {
-            threshold: 0.1
-        }
-
+        { threshold: 0.1 }
     );
-
 
     document.querySelectorAll(
         ".project-card, .skill-card, .achievement-card, .about-layout, .contact-box"
     ).forEach(element => {
-
         element.style.opacity = "0";
         element.style.transform = "translateY(30px)";
         element.style.transition = "all 0.7s ease";
-
         observer.observe(element);
-
     });
 
-
     // Optimized Cursor Glow
-
     const glow = document.createElement("div");
 
     glow.style.position = "fixed";
@@ -1467,38 +1248,27 @@
     glow.style.height = "250px";
     glow.style.borderRadius = "50%";
     glow.style.pointerEvents = "none";
-    glow.style.background =
-        "radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%)";
+    glow.style.background = "radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%)";
     glow.style.zIndex = "-1";
     glow.style.willChange = "transform";
     glow.style.top = "0";
     glow.style.left = "0";
-
+    
     document.body.appendChild(glow);
-
 
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
 
-
     document.addEventListener("mousemove", (e) => {
-
         mouseX = e.clientX;
         mouseY = e.clientY;
-
     });
 
-
     function animateGlow() {
-
-        glow.style.transform =
-            `translate(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%))`;
-
+        glow.style.transform = `translate(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%))`;
         requestAnimationFrame(animateGlow);
-
     }
-
-
+    
     animateGlow();
 
 </script>
